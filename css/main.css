@@ -195,7 +195,6 @@ h5 {
   border-radius: 30px;
   height: 40px;
   padding: 8px;
-  border: 2px solid #f4f4f4;
 }
 
 .header .nav .container .search-box .search-txt {
@@ -490,6 +489,19 @@ h5 {
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.8em;
   margin: 1.4em 0;
+}
+
+.categories-container :hover,
+.categories-container :active {
+  background-color: var(--main-color);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: white;
+}
+
+.categories-container :hover i,
+.categories-container :active i {
+  color: black;
 }
 
 .category-cont {

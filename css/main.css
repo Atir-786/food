@@ -84,7 +84,7 @@ h5 {
 }
 
 .btn-dark {
-  background-color: #444;
+  background-color: #ccc;
 }
 
 .lead {
@@ -95,6 +95,13 @@ h5 {
 
 .display-menu {
   overflow: hidden;
+}
+
+.center {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 :root {
@@ -463,5 +470,80 @@ h5 {
   }
   .image {
     min-height: 14em;
+  }
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.categories-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.8em;
+  margin: 1.4em 0;
+}
+
+.category-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ccc;
+  padding: 1.2em 0;
+}
+
+.category-cont .icon-cont {
+  position: relative;
+  margin-bottom: 1.2em;
+}
+
+.category-cont .icon-cont i {
+  padding: 1em;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.category-cont .icon-cont h5 {
+  position: absolute;
+  padding: 0.3em;
+  background-color: var(--main-color);
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  font-size: 0.6em;
+  color: #f4f4f4;
+}
+
+.category-cont .s-heading {
+  margin: 0.3em 0;
+}
+
+.category-cont h6 {
+  font-weight: 400;
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 768px) {
+  .categories-container {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
   }
 }

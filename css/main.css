@@ -139,6 +139,18 @@ h5 {
   color: #f4f4f4;
 }
 
+.fa-star {
+  color: var(--main-color);
+}
+
+.margin-1 {
+  margin: 1em 0;
+}
+
+.margin-2 {
+  margin: 2em 0;
+}
+
 :root {
   --main-color: #ffa500;
   --black-color: #0b0701;
@@ -402,7 +414,7 @@ h5 {
   background-color: #ffa600;
 }
 
-.image {
+.section-image .image {
   position: relative;
   top: 15%;
   -o-object-fit: cover;
@@ -789,5 +801,61 @@ h5 {
   }
   .menu-item {
     width: 24%;
+  }
+}
+
+.testinomials-container {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testinomial-item {
+  padding: 1.5em;
+  border: 2px solid #999;
+  margin: 0.5em;
+}
+
+.testinomial-item .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testinomial-item .flex h3 {
+  margin-left: 1em;
+}
+
+.testinomial-item img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flex,
+.stars,
+.border,
+.l-heading,
+.lead {
+  margin: 0.6em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .testinomials-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }

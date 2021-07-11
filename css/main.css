@@ -869,3 +869,88 @@ h5 {
     max-height: 550px;
   }
 }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #999;
+  overflow: hidden;
+  height: 300px;
+}
+
+.contact-image {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+}
+
+.contact-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-content {
+  height: 100%;
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
+  padding: 1em;
+}
+
+.contact-content .btn {
+  border: none;
+  cursor: pointer;
+}
+
+.form {
+  margin: 2em 0;
+  height: 50%;
+}
+
+.form .input-data {
+  height: 45px;
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 0.8em;
+  margin-right: 2em;
+}
+
+.form .input-data input {
+  outline: none;
+  border: none;
+  background-color: #f4f4f4;
+  float: left;
+  font-size: 0.9em;
+  letter-spacing: 0.7px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.form .input-data i {
+  color: #fff;
+  float: right;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-image {
+    display: none;
+  }
+  .form-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}

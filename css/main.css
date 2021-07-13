@@ -891,7 +891,6 @@ h5 {
 }
 
 .contact-content {
-  height: 100%;
   -webkit-box-flex: 1.2;
       -ms-flex: 1.2;
           flex: 1.2;
@@ -899,18 +898,16 @@ h5 {
 }
 
 .contact-content .btn {
+  margin: 1em 0;
   border: none;
   cursor: pointer;
 }
 
 .form {
   margin: 2em 0;
-  height: 50%;
 }
 
 .form .input-data {
-  height: 45px;
-  width: 250px;
   background-color: #f4f4f4;
   padding: 0.8em;
   margin-right: 2em;
@@ -939,7 +936,20 @@ h5 {
   margin: 2em 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
+  .contact {
+    height: 22em;
+    background: url("../images/pexels-askar-abayev-5638732.jpg") no-repeat center center/cover;
+  }
+  .contact-content {
+    width: 100%;
+    padding: 1em 0;
+    opacity: 0.8;
+  }
+  .contact-content .m-heading {
+    color: #fff;
+    text-align: center;
+  }
   .contact-image {
     display: none;
   }
@@ -948,13 +958,49 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0.3em 0;
+    margin: 0.2em 0;
   }
   .input-data {
+    width: 100%;
     margin: 0.3em 0;
   }
   .form {
     margin: 0;
-    height: 80%;
   }
+}
+
+.footer {
+  margin-top: 2em;
+  padding: 1em 0;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.footer-content .social {
+  color: var(--main-color);
+}
+
+.footer-content .social i {
+  margin: 0 0.5em;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.footer-content .social i:hover, .footer-content .social i:active {
+  color: #ccc;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.A {
+  width: 25%;
 }
